@@ -1,0 +1,12 @@
+CONTIKI_PROJECT = server client_repet
+
+all: $(CONTIKI_PROJECT)
+
+MAKE_MAC = MAKE_MAC_CSMA
+MAKE_NET = MAKE_NET_IPV6
+MAKE_ROUTING = MAKE_ROUTING_RPL_LITE
+
+CFLAGS += -DPROJECT_CONF_PATH=\"project-conf.h\"
+
+CONTIKI = ../../..
+include $(CONTIKI)/Makefile.include

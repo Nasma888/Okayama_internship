@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Template de simulation Cooja pour validation du modèle Gilbert.
+  Placeholders substitués par scripts/render_csc.py :
+    __RUN_ID__      identifiant unique du run (config x seed)
+    __SEED__        seed de la simulation Cooja (random_seed)
+    __P_GB__        proba de transition Good -> Bad (par lien dirigé)
+    __P_BG__        proba de transition Bad -> Good
+    __DURATION_MS__ durée de simulation en millisecondes
+    __LOGFILE__     chemin absolu du fichier de sortie pour les logs motes/radio
+
+  ADAPTER : chemins firmware (client/server), positions des motes,
+  et le bloc <transmitting_range>/<interference_range> selon ta topologie
+  déjà validée (cf. tests d'intégration UDGMGilbertLoss).
+-->
+<simconf>
+  <simulation>
+    <title>gilbert_validation___RUN_ID__</title>
+    <randomseed>__SEED__</randomseed>
+    <motedelay_us>1000000</motedelay_us>
+    <radiomedium>
+      org.contikios.cooja.radiomediums.UDGMGilbertLoss
+      <transmitting_range>50.0</transmitting_range>
+      <interference_range>100.0</interference_range>
+      <success_ratio_tx>1.0</success_ratio_tx>
+      <!-- P_GB / P_BG appliqués par lien dirigé, cf. UDGMGilbertLoss.java -->
+      <gilbert_p_gb>__P_GB__</gilbert_p_gb>
+      <gilbert_p_bg>__P_BG__</gilbert_p_bg>
+      <gilbert_log_bursts>true</gilbert_log_bursts>
+      <!-- requiert le patch v2 (compteur cumulé) -- cf. java_patch/UDGMGilbertLoss.patch.txt -->
+    </radiomedium>
+    <events>
+      <logoutput>40000</logoutput>
+    </events>
+
+    <!-- TODO : adapter aux chemins réels de tes firmwares client/serveur
+         ML-KEM déjà compilés pour Cooja native motes -->
+    <motetype>
+      org.contikios.cooja.contikimote.ContikiMoteType
+      <description>PQC Server</description>
+      <source>[CONFIG_ADAPT]/server.c</source>
+      <commands>make server.cooja TARGET=cooja</commands>
+      <moteinterface>org.contikios.cooja.interfaces.Position</moteinterface>
+      <moteinterface>org.contikios.cooja.contikimote.interfaces.ContikiRadio</moteinterface>
+      <moteinterface>org.contikios.cooja.contikimote.interfaces.ContikiLog</moteinterface>
+    </motetype>
+    <mote>
+      <interface_config>org.contikios.cooja.interfaces.Position 0.0 0.0 0.0</interface_config>
+      <motetype_identifier>server_type</motetype_identifier>
+    </mote>
+
+    <motetype>
+      org.contikios.cooja.contikimote.ContikiMoteType
+      <description>PQC Client</description>
+      <source>[CONFIG_ADAPT]/client.c</source>
+      <commands>make client.cooja TARGET=cooja</commands>
+      <moteinterface>org.contikios.cooja.interfaces.Position</moteinterface>
+      <moteinterface>org.contikios.cooja.contikimote.interfaces.ContikiRadio</moteinterface>
+      <moteinterface>org.contikios.cooja.contikimote.interfaces.ContikiLog</moteinterface>
+    </motetype>
+    <mote>
+      <interface_config>org.contikios.cooja.interfaces.Position 20.0 0.0 0.0</interface_config>
+      <motetype_identifier>client_type</motetype_identifier>
+    </mote>
+  </simulation>
+
+  <plugin>
+    org.contikios.cooja.plugins.Visualizer
+  </plugin>
+
+  <plugin>
+    org.contikios.cooja.plugins.LogListener
+    <plugin_config>
+      <filter />
+      <formatted_time />
+      <coloring />
+    </plugin_config>
+  </plugin>
+
+  <!-- Script shutdown : arrêt automatique après DURATION_MS.
+       NOTE IMPORTANTE : les logs "[Gilbert] ..." (SLF4J, côté Java du
+       radio medium) ne passent PAS par ce ScriptRunner -- celui-ci
+       n'a accès qu'au flux de sortie des motes (variable `msg`). Les
+       logs SLF4J atterrissent dans la console/log4j2 de Cooja, donc
+       dans le stdout du process `gradlew run`, déjà capturé par
+       run_batch.sh dans results/run_status/<run_id>.stdout.
+       C'est CE fichier .stdout qu'il faut parser pour les lignes
+       [Gilbert], pas un fichier séparé produit ici. -->
+  <plugin>
+    org.contikios.cooja.plugins.ScriptRunner
+    <plugin_config>
+      <script>
+TIMEOUT(__DURATION_MS__, log.log("TIMEOUT_REACHED __RUN_ID__\n"));
+while (true) { YIELD(); }
+      </script>
+      <active>true</active>
+    </plugin_config>
+  </plugin>
+</simconf>

@@ -1,0 +1,121 @@
+run_id,severity,issue
+B-kem512-fixed-prr0p50-loss1-rep20-seed200020-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem512-fixed-prr0p50-loss1-rep20-seed200020-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem512-fixed-prr0p50-loss1-rep20-seed200020-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem512-fixed-prr0p50-loss1-rep20-seed200020-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem512-fixed-prr0p50-loss1-rep30-seed200030-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem512-fixed-prr0p50-loss1-rep30-seed200030-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem512-fixed-prr0p50-loss1-rep30-seed200030-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem512-fixed-prr0p50-loss1-rep30-seed200030-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem512-fixed-prr0p90-loss1-rep26-seed200026-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem512-fixed-prr0p90-loss1-rep26-seed200026-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem512-fixed-prr0p90-loss1-rep26-seed200026-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem512-fixed-prr0p90-loss1-rep26-seed200026-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem512-gilbert-prr0p50-L10-loss1-rep19-seed200019-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem512-gilbert-prr0p50-L10-loss1-rep19-seed200019-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem512-gilbert-prr0p50-L10-loss1-rep19-seed200019-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem512-gilbert-prr0p50-L10-loss1-rep19-seed200019-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem512-gilbert-prr0p85-L2-loss1-rep01-seed200001-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem512-gilbert-prr0p85-L2-loss1-rep01-seed200001-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem512-gilbert-prr0p85-L2-loss1-rep01-seed200001-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem512-gilbert-prr0p85-L2-loss1-rep01-seed200001-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem512-gilbert-prr0p85-L2-loss1-rep09-seed200009-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem512-gilbert-prr0p85-L2-loss1-rep09-seed200009-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem512-gilbert-prr0p85-L2-loss1-rep09-seed200009-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem512-gilbert-prr0p85-L2-loss1-rep09-seed200009-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem512-gilbert-prr0p85-L5-loss1-rep28-seed200028-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem512-gilbert-prr0p85-L5-loss1-rep28-seed200028-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem512-gilbert-prr0p85-L5-loss1-rep28-seed200028-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem512-gilbert-prr0p85-L5-loss1-rep28-seed200028-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem512-gilbert-prr0p90-L2-loss1-rep09-seed200009-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem512-gilbert-prr0p90-L2-loss1-rep09-seed200009-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem512-gilbert-prr0p90-L2-loss1-rep09-seed200009-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem512-gilbert-prr0p90-L2-loss1-rep09-seed200009-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem512-gilbert-prr0p95-L2-loss1-rep09-seed200009-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem512-gilbert-prr0p95-L2-loss1-rep09-seed200009-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem512-gilbert-prr0p95-L2-loss1-rep09-seed200009-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem512-gilbert-prr0p95-L2-loss1-rep09-seed200009-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem512-gilbert-prr0p95-L2-loss1-rep11-seed200011-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem512-gilbert-prr0p95-L2-loss1-rep11-seed200011-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem512-gilbert-prr0p95-L2-loss1-rep11-seed200011-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem512-gilbert-prr0p95-L2-loss1-rep11-seed200011-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem768-fixed-prr0p50-loss1-rep20-seed200020-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem768-fixed-prr0p50-loss1-rep20-seed200020-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem768-fixed-prr0p50-loss1-rep20-seed200020-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem768-fixed-prr0p50-loss1-rep20-seed200020-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem768-fixed-prr0p50-loss1-rep30-seed200030-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem768-fixed-prr0p50-loss1-rep30-seed200030-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem768-fixed-prr0p50-loss1-rep30-seed200030-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem768-fixed-prr0p50-loss1-rep30-seed200030-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem768-fixed-prr0p90-loss1-rep26-seed200026-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem768-fixed-prr0p90-loss1-rep26-seed200026-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem768-fixed-prr0p90-loss1-rep26-seed200026-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem768-fixed-prr0p90-loss1-rep26-seed200026-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem768-gilbert-prr0p50-L10-loss1-rep19-seed200019-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem768-gilbert-prr0p50-L10-loss1-rep19-seed200019-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem768-gilbert-prr0p50-L10-loss1-rep19-seed200019-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem768-gilbert-prr0p50-L10-loss1-rep19-seed200019-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem768-gilbert-prr0p85-L2-loss1-rep01-seed200001-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem768-gilbert-prr0p85-L2-loss1-rep01-seed200001-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem768-gilbert-prr0p85-L2-loss1-rep01-seed200001-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem768-gilbert-prr0p85-L2-loss1-rep01-seed200001-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem768-gilbert-prr0p85-L2-loss1-rep09-seed200009-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem768-gilbert-prr0p85-L2-loss1-rep09-seed200009-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem768-gilbert-prr0p85-L2-loss1-rep09-seed200009-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem768-gilbert-prr0p85-L2-loss1-rep09-seed200009-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem768-gilbert-prr0p85-L5-loss1-rep28-seed200028-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem768-gilbert-prr0p85-L5-loss1-rep28-seed200028-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem768-gilbert-prr0p85-L5-loss1-rep28-seed200028-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem768-gilbert-prr0p85-L5-loss1-rep28-seed200028-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem768-gilbert-prr0p90-L2-loss1-rep09-seed200009-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem768-gilbert-prr0p90-L2-loss1-rep09-seed200009-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem768-gilbert-prr0p90-L2-loss1-rep09-seed200009-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem768-gilbert-prr0p90-L2-loss1-rep09-seed200009-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem768-gilbert-prr0p95-L2-loss1-rep09-seed200009-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem768-gilbert-prr0p95-L2-loss1-rep09-seed200009-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem768-gilbert-prr0p95-L2-loss1-rep09-seed200009-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem768-gilbert-prr0p95-L2-loss1-rep09-seed200009-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem768-gilbert-prr0p95-L2-loss1-rep11-seed200011-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem768-gilbert-prr0p95-L2-loss1-rep11-seed200011-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem768-gilbert-prr0p95-L2-loss1-rep11-seed200011-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem768-gilbert-prr0p95-L2-loss1-rep11-seed200011-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem1024-fixed-prr0p50-loss1-rep20-seed200020-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem1024-fixed-prr0p50-loss1-rep20-seed200020-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem1024-fixed-prr0p50-loss1-rep20-seed200020-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem1024-fixed-prr0p50-loss1-rep20-seed200020-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem1024-fixed-prr0p50-loss1-rep30-seed200030-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem1024-fixed-prr0p50-loss1-rep30-seed200030-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem1024-fixed-prr0p50-loss1-rep30-seed200030-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem1024-fixed-prr0p50-loss1-rep30-seed200030-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem1024-fixed-prr0p90-loss1-rep26-seed200026-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem1024-fixed-prr0p90-loss1-rep26-seed200026-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem1024-fixed-prr0p90-loss1-rep26-seed200026-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem1024-fixed-prr0p90-loss1-rep26-seed200026-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem1024-gilbert-prr0p50-L10-loss1-rep19-seed200019-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem1024-gilbert-prr0p50-L10-loss1-rep19-seed200019-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem1024-gilbert-prr0p50-L10-loss1-rep19-seed200019-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem1024-gilbert-prr0p50-L10-loss1-rep19-seed200019-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem1024-gilbert-prr0p85-L2-loss1-rep01-seed200001-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem1024-gilbert-prr0p85-L2-loss1-rep01-seed200001-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem1024-gilbert-prr0p85-L2-loss1-rep01-seed200001-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem1024-gilbert-prr0p85-L2-loss1-rep01-seed200001-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem1024-gilbert-prr0p85-L2-loss1-rep09-seed200009-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem1024-gilbert-prr0p85-L2-loss1-rep09-seed200009-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem1024-gilbert-prr0p85-L2-loss1-rep09-seed200009-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem1024-gilbert-prr0p85-L2-loss1-rep09-seed200009-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem1024-gilbert-prr0p85-L5-loss1-rep28-seed200028-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem1024-gilbert-prr0p85-L5-loss1-rep28-seed200028-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem1024-gilbert-prr0p85-L5-loss1-rep28-seed200028-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem1024-gilbert-prr0p85-L5-loss1-rep28-seed200028-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem1024-gilbert-prr0p90-L2-loss1-rep09-seed200009-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem1024-gilbert-prr0p90-L2-loss1-rep09-seed200009-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem1024-gilbert-prr0p90-L2-loss1-rep09-seed200009-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem1024-gilbert-prr0p90-L2-loss1-rep09-seed200009-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem1024-gilbert-prr0p95-L2-loss1-rep09-seed200009-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem1024-gilbert-prr0p95-L2-loss1-rep09-seed200009-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem1024-gilbert-prr0p95-L2-loss1-rep09-seed200009-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem1024-gilbert-prr0p95-L2-loss1-rep09-seed200009-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem1024-gilbert-prr0p95-L2-loss1-rep11-seed200011-v3,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem1024-gilbert-prr0p95-L2-loss1-rep11-seed200011-v3,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED
+B-kem1024-gilbert-prr0p95-L2-loss1-rep11-seed200011-v4,WARNING,"perte ciblée armée, mais le canal/radio a perdu la trame avant le hook receiver"
+B-kem1024-gilbert-prr0p95-L2-loss1-rep11-seed200011-v4,WARNING,cible armée mais perdue par le canal/radio avant FORCED_LOSS_APPLIED

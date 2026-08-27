@@ -1,0 +1,22 @@
+{
+  "run_id": "A-kem512-fixed-prr1p00-rep02-seed200002-v2",
+  "started_at": "2026-08-18T10:55:57+00:00",
+  "ended_at": "2026-08-18T10:55:59+00:00",
+  "command": [
+    "/home/nasma/V2_Internship/code/contiki-ng/tools/cooja/gradlew",
+    "run",
+    "--args=--contiki=/home/nasma/V2_Internship/code/contiki-ng --no-gui /home/nasma/V2_Internship/code/bench_result/Experiments/mlkem_campaign_corrected/generated/simulations/A-kem512-fixed-prr1p00-rep02-seed200002-v2.csc"
+  ],
+  "exit_code": 0,
+  "timed_out": false,
+  "log_found": true,
+  "log_source": "/home/nasma/V2_Internship/code/contiki-ng/tools/cooja/COOJA.testlog",
+  "console_log": "/home/nasma/V2_Internship/code/bench_result/Experiments/mlkem_campaign_corrected/runs/A-kem512-fixed-prr1p00-rep02-seed200002-v2/cooja-console.log",
+  "script_runner_log": "/home/nasma/V2_Internship/code/contiki-ng/tools/cooja/COOJA.testlog",
+  "parse_status": "success",
+  "error": null,
+  "result_class": "SUCCESS",
+  "run_success": 1,
+  "raw_log_sha256": "eeedec85ebad24f8792d4d5d301675fdc0f9405b0b0ba046c72228d928a745a3",
+  "parser_warning_count": 0
+}

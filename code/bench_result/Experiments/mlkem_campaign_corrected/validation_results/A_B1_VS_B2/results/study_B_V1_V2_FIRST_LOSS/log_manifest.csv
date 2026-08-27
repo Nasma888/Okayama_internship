@@ -1,0 +1,1 @@
+run_id,paired_group,campaign,data_origin,kem_level,variant,model,target_prr,mean_bad_burst,forced_loss,seed,raw_log_path,raw_log_sha256,log_size_bytes,log_line_count,parse_status,run_success,result_class

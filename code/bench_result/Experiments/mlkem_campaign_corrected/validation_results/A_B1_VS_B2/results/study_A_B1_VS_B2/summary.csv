@@ -1,0 +1,3 @@
+campaign,comparison_arm,kem_level,variant,variant_name,model,target_prr,mean_bad_burst,p_gb,p_bg,forced_loss,number_of_runs,evaluated_runs,successful_runs,success_rate,mean_latency_success,median_latency_success,mean_application_retries,mean_selective_retransmissions,mean_rfrag_retransmissions,mean_rfrag_rto_expired,mean_rfrag_null_ack_rx,mean_rfrag_partial_ack_rx,mean_rfrag_ack_tx,mean_fragments_tx,forced_loss_applied_rate
+A_B1_VS_B2,B1,512,1,B1_RFC4944_NO_RECOVERY,fixed,1.0,,,,none,3,3,3,1.0,521.3333333333334,509.0,0.0,,,,,,,,
+A_B1_VS_B2,B2,512,2,B2_RFRAG_FINAL_ACK,fixed,1.0,,,,none,3,3,3,1.0,555.6666666666666,530.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,18.0,

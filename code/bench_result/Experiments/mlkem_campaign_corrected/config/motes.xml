@@ -1,0 +1,54 @@
+<motetype>
+  org.contikios.cooja.contikimote.ContikiMoteType
+  <identifier>server_type</identifier>
+  <description>server</description>
+  <source>[BUILD_DIR]/server.c</source>
+  <commands>$(MAKE) -j$(CPUS) server.cooja TARGET=cooja</commands>
+  <moteinterface>org.contikios.cooja.interfaces.Position</moteinterface>
+  <moteinterface>org.contikios.cooja.contikimote.interfaces.ContikiMoteID</moteinterface>
+  <moteinterface>org.contikios.cooja.contikimote.interfaces.ContikiRS232</moteinterface>
+  <moteinterface>org.contikios.cooja.interfaces.IPAddress</moteinterface>
+  <moteinterface>org.contikios.cooja.contikimote.interfaces.ContikiRadio</moteinterface>
+  <moteinterface>org.contikios.cooja.contikimote.interfaces.ContikiClock</moteinterface>
+  <moteinterface>org.contikios.cooja.contikimote.interfaces.ContikiLED</moteinterface>
+  <moteinterface>org.contikios.cooja.interfaces.Mote2MoteRelations</moteinterface>
+  <moteinterface>org.contikios.cooja.interfaces.MoteAttributes</moteinterface>
+</motetype>
+<mote>
+  <interface_config>
+    org.contikios.cooja.interfaces.Position
+    <pos x="57.8888" y="44.8798" />
+  </interface_config>
+  <interface_config>
+    org.contikios.cooja.contikimote.interfaces.ContikiMoteID
+    <id>1</id>
+  </interface_config>
+  <motetype_identifier>server_type</motetype_identifier>
+</mote>
+<motetype>
+  org.contikios.cooja.contikimote.ContikiMoteType
+  <identifier>client_type</identifier>
+  <description>client</description>
+  <source>[BUILD_DIR]/client.c</source>
+  <commands>$(MAKE) -j$(CPUS) client.cooja TARGET=cooja</commands>
+  <moteinterface>org.contikios.cooja.interfaces.Position</moteinterface>
+  <moteinterface>org.contikios.cooja.contikimote.interfaces.ContikiMoteID</moteinterface>
+  <moteinterface>org.contikios.cooja.contikimote.interfaces.ContikiRS232</moteinterface>
+  <moteinterface>org.contikios.cooja.interfaces.IPAddress</moteinterface>
+  <moteinterface>org.contikios.cooja.contikimote.interfaces.ContikiRadio</moteinterface>
+  <moteinterface>org.contikios.cooja.contikimote.interfaces.ContikiClock</moteinterface>
+  <moteinterface>org.contikios.cooja.contikimote.interfaces.ContikiLED</moteinterface>
+  <moteinterface>org.contikios.cooja.interfaces.Mote2MoteRelations</moteinterface>
+  <moteinterface>org.contikios.cooja.interfaces.MoteAttributes</moteinterface>
+</motetype>
+<mote>
+  <interface_config>
+    org.contikios.cooja.interfaces.Position
+    <pos x="70.1451" y="70.6312" />
+  </interface_config>
+  <interface_config>
+    org.contikios.cooja.contikimote.interfaces.ContikiMoteID
+    <id>2</id>
+  </interface_config>
+  <motetype_identifier>client_type</motetype_identifier>
+</mote>

@@ -1,0 +1,46 @@
+# Regression Tests of IEEE 802.15.4 Fundamentals
+
+## 01-panid-handling
+
+Test return values by `frame802154_has_panid()` in
+[frame802154.c](../../os/net/mac/frame802154.c).
+
+### Test Code
+
+A test vector is implemented in
+[test-panid-handling.c](./code/test-panid-handling.c) according to Section
+7.2.1.5, IEEE 802.15.4-2015. The testee mote outputs a test result to the
+console with the prefix, `"=check-me="`.
+
+[01-panid-handling.js](./js/01-panid-handling.js) examines each console output
+containing `"=check-me="`. If it finds `"DONE"` without having had any
+`"FAILED"`, the test is considered SUCCESS, `log.testOK()` is called. Otherwise,
+FAILED.
+
+### References
+
+* https://standards.ieee.org/findstds/standard/802.15.4-2015.html
+* https://github.com/contiki-os/contiki/pull/1914
+
+## 10-framer-negative
+
+Negative-path regression tests for the IEEE 802.15.4 framer, covering the
+hardening of `frame802154_parse()` and
+`frame802154e_parse_information_elements()` against malformed input.
+
+### Test Code
+
+[test-framer-negative.c](./code-framer-negative/test-framer-negative.c) feeds
+truncated frames, oversized and zero-length information elements, and a frame
+whose security-control octet sets reserved bits, and asserts that the parsers
+reject the input (returning the documented failure value) and never store
+unvalidated state. Positive controls confirm that well-formed frames and a
+valid TSCH channel hopping sequence IE still parse. The mote prints results
+with the `"=check-me="` prefix, examined by
+[10-framer-negative.js](./js/10-framer-negative.js) as in 01-panid-handling.
+
+Under Cooja the assertions check the parsers' return values and stored state.
+Some guards additionally prevent out-of-bounds *reads* whose return value is
+unchanged; because every test vector is an exact-length array, those reads can
+be caught by compiling the framer together with these vectors under
+AddressSanitizer (its global redzones turn an over-read into a hard failure).

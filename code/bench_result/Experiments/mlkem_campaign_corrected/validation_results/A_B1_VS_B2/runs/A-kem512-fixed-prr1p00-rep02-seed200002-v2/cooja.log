@@ -1,0 +1,147 @@
+Random seed: 200002
+1000 ID:1 [INFO: Main      ] Starting Contiki-NG-develop/v5.2-dirty
+1000 ID:1 [INFO: Main      ] - Routing: RPL Lite
+1000 ID:1 [INFO: Main      ] - Net: sicslowpan
+1000 ID:1 [INFO: Main      ] - MAC: CSMA
+1000 ID:1 [INFO: Main      ] - 802.15.4 PANID: 0xabcd
+1000 ID:1 [INFO: Main      ] - 802.15.4 Default channel: 26
+1000 ID:1 [INFO: Main      ] Node ID: 1
+1000 ID:1 [INFO: Main      ] Link-layer address: 0001.0001.0001.0001
+1000 ID:1 [INFO: Main      ] Tentative link-local IPv6 address: fe80::201:1:1:1
+1000 ID:1 [INFO: MLKEM-SERVER] EXPERIMENT_CONFIG,role=server,variant=2,variant_name=B2_RFRAG_FINAL_ACK,kem=512,kem_name=MLKEM512,seed=200002,rfrag=1,ack_first=0,idle_ack=0,app_retry=0,forced_loss=none,forced_loss_layer=none
+1000 ID:1 [INFO: MLKEM-SERVER] Serveur/root initialise: case=MLKEM512 case_idx=0 PK=800 CT=768
+1000 ID:2 [WARN: 6LoWPAN   ] RFRAG ENABLED: ack_first=0 ack_idle_enable=0 ack_idle=500 ticks arq=1000 ticks max_arq=8000 ticks reass=20000 ticks completed=10000 ticks max_restarts=3
+1000 ID:2 [INFO: Main      ] Starting Contiki-NG-develop/v5.2-dirty
+1000 ID:2 [INFO: Main      ] - Routing: RPL Lite
+1000 ID:2 [INFO: Main      ] - Net: sicslowpan
+1000 ID:2 [INFO: Main      ] - MAC: CSMA
+1000 ID:2 [INFO: Main      ] - 802.15.4 PANID: 0xabcd
+1000 ID:2 [INFO: Main      ] - 802.15.4 Default channel: 26
+1000 ID:2 [INFO: Main      ] Node ID: 2
+1000 ID:2 [INFO: Main      ] Link-layer address: 0002.0002.0002.0002
+1000 ID:2 [INFO: Main      ] Tentative link-local IPv6 address: fe80::202:2:2:2
+1000 ID:2 [INFO: MLKEM-CLIENT] EXPERIMENT_CONFIG,role=client,variant=2,variant_name=B2_RFRAG_FINAL_ACK,kem=512,kem_name=MLKEM512,seed=200002,rfrag=1,ack_first=0,idle_ack=0,app_retry=0,max_app_retries=0,forced_loss=none,forced_loss_layer=none,route_acquisition_timeout_ticks=60000,client_result_fallback_ticks=190000
+1000 ID:2 [INFO: MLKEM-CLIENT] Client initialise: one KEM level only, case=MLKEM512 case_idx=0 PK=800 CT=768
+3352000 ID:1 [INFO: 6LoWPAN   ] output: sending IPv6 packet with len 116
+3352000 ID:1 [INFO: 6LoWPAN   ] output: header len 40 -> 4, total len 116 -> 80, MAC max payload 110, frag_needed 0
+3398040 ID:2 [INFO: 6LoWPAN   ] input: received IPv6 packet with len 116
+5060000 ID:2 [INFO: 6LoWPAN   ] output: sending IPv6 packet with len 116
+5060000 ID:2 [INFO: 6LoWPAN   ] output: header len 40 -> 3, total len 116 -> 79, MAC max payload 104, frag_needed 0
+5080296 ID:1 [INFO: 6LoWPAN   ] input: received IPv6 packet with len 116
+6602000 ID:2 [INFO: 6LoWPAN   ] output: sending IPv6 packet with len 116
+6602000 ID:2 [INFO: 6LoWPAN   ] output: header len 40 -> 3, total len 116 -> 79, MAC max payload 104, frag_needed 0
+6609296 ID:1 [INFO: 6LoWPAN   ] input: received IPv6 packet with len 116
+8918000 ID:2 [INFO: 6LoWPAN   ] output: sending IPv6 packet with len 116
+8918000 ID:2 [INFO: 6LoWPAN   ] output: header len 40 -> 3, total len 116 -> 79, MAC max payload 104, frag_needed 0
+8932296 ID:1 [INFO: 6LoWPAN   ] input: received IPv6 packet with len 116
+11972000 ID:1 [INFO: 6LoWPAN   ] output: sending IPv6 packet with len 116
+11972000 ID:1 [INFO: 6LoWPAN   ] output: header len 40 -> 4, total len 116 -> 80, MAC max payload 110, frag_needed 0
+12015040 ID:2 [INFO: 6LoWPAN   ] input: received IPv6 packet with len 116
+12663000 ID:2 [INFO: 6LoWPAN   ] output: sending IPv6 packet with len 116
+12663000 ID:2 [INFO: 6LoWPAN   ] output: header len 40 -> 3, total len 116 -> 79, MAC max payload 104, frag_needed 0
+12681296 ID:1 [INFO: 6LoWPAN   ] input: received IPv6 packet with len 116
+18527000 ID:2 [INFO: 6LoWPAN   ] output: sending IPv6 packet with len 98
+18527000 ID:2 [INFO: 6LoWPAN   ] output: header len 48 -> 12, total len 98 -> 62, MAC max payload 104, frag_needed 0
+18535752 ID:1 [INFO: 6LoWPAN   ] input: received IPv6 packet with len 98
+18535752 ID:1 [INFO: 6LoWPAN   ] output: sending IPv6 packet with len 56
+18535752 ID:1 [INFO: 6LoWPAN   ] output: header len 48 -> 12, total len 56 -> 20, MAC max payload 104, frag_needed 0
+18573408 ID:2 [INFO: 6LoWPAN   ] input: received IPv6 packet with len 56
+21519000 ID:2 [INFO: 6LoWPAN   ] output: sending IPv6 packet with len 116
+21519000 ID:2 [INFO: 6LoWPAN   ] output: header len 40 -> 4, total len 116 -> 80, MAC max payload 110, frag_needed 0
+21543040 ID:1 [INFO: 6LoWPAN   ] input: received IPv6 packet with len 116
+26846000 ID:1 [INFO: 6LoWPAN   ] output: sending IPv6 packet with len 116
+26846000 ID:1 [INFO: 6LoWPAN   ] output: header len 40 -> 4, total len 116 -> 80, MAC max payload 110, frag_needed 0
+26866040 ID:2 [INFO: 6LoWPAN   ] input: received IPv6 packet with len 116
+27527000 ID:2 [INFO: 6LoWPAN   ] output: sending IPv6 packet with len 116
+27527000 ID:2 [INFO: 6LoWPAN   ] output: header len 40 -> 4, total len 116 -> 80, MAC max payload 110, frag_needed 0
+27570040 ID:1 [INFO: 6LoWPAN   ] input: received IPv6 packet with len 116
+30001000 ID:2 [INFO: MLKEM-CLIENT] PK_ATTEMPT,pk_attempt=1,forced_loss=none,forced_loss_injected=none,forced_loss_layer=none,channel=normal
+30001000 ID:2 [INFO: MLKEM-CLIENT] TX PK case=MLKEM512 case_idx=0 seq=0 declared=800 datalen=800 attempt=1 original_tx_ticks=30001 attempt_tx_ticks=30001 to fd00::201:1:1:1
+30001000 ID:2 [INFO: 6LoWPAN   ] output: sending IPv6 packet with len 856
+30001000 ID:2 [INFO: 6LoWPAN   ] output: header len 56 -> 18, total len 856 -> 818, MAC max payload 104, frag_needed 1
+30001000 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: start tag 0 compressed size 818, fragments 9, fragment size 96, ACK_FIRST=0
+30002000 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: seq 0/8 tag 0 size 96 offset 0 X=0
+30027032 ID:1 [INFO: 6LoWPAN   ] RFRAG RX: tag 0 seq 0/8 size 96 offset 0 X=0 bitmap 0x80000000 bytes 96/818
+30027032 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: seq 0 MAC status 0, transmissions 1
+30028000 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: seq 1/8 tag 0 size 96 offset 96 X=0
+30072032 ID:1 [INFO: 6LoWPAN   ] RFRAG RX: tag 0 seq 1/8 size 96 offset 96 X=0 bitmap 0xc0000000 bytes 192/818
+30072032 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: seq 1 MAC status 0, transmissions 1
+30073000 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: seq 2/8 tag 0 size 96 offset 192 X=0
+30117032 ID:1 [INFO: 6LoWPAN   ] RFRAG RX: tag 0 seq 2/8 size 96 offset 192 X=0 bitmap 0xe0000000 bytes 288/818
+30117032 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: seq 2 MAC status 0, transmissions 1
+30118000 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: seq 3/8 tag 0 size 96 offset 288 X=0
+30162032 ID:1 [INFO: 6LoWPAN   ] RFRAG RX: tag 0 seq 3/8 size 96 offset 288 X=0 bitmap 0xf0000000 bytes 384/818
+30162032 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: seq 3 MAC status 0, transmissions 1
+30163000 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: seq 4/8 tag 0 size 96 offset 384 X=0
+30209032 ID:1 [INFO: 6LoWPAN   ] RFRAG RX: tag 0 seq 4/8 size 96 offset 384 X=0 bitmap 0xf8000000 bytes 480/818
+30209032 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: seq 4 MAC status 0, transmissions 1
+30210000 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: seq 5/8 tag 0 size 96 offset 480 X=0
+30249032 ID:1 [INFO: 6LoWPAN   ] RFRAG RX: tag 0 seq 5/8 size 96 offset 480 X=0 bitmap 0xfc000000 bytes 576/818
+30249032 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: seq 5 MAC status 0, transmissions 1
+30250000 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: seq 6/8 tag 0 size 96 offset 576 X=0
+30277032 ID:1 [INFO: 6LoWPAN   ] RFRAG RX: tag 0 seq 6/8 size 96 offset 576 X=0 bitmap 0xfe000000 bytes 672/818
+30277032 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: seq 6 MAC status 0, transmissions 1
+30278000 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: seq 7/8 tag 0 size 96 offset 672 X=0
+30324032 ID:1 [INFO: 6LoWPAN   ] RFRAG RX: tag 0 seq 7/8 size 96 offset 672 X=0 bitmap 0xff000000 bytes 768/818
+30324032 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: seq 7 MAC status 0, transmissions 1
+30325000 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: seq 8/8 tag 0 size 50 offset 768 X=1
+30361560 ID:1 [INFO: 6LoWPAN   ] RFRAG RX: tag 0 seq 8/8 size 50 offset 768 X=1 bitmap 0xff800000 bytes 818/818
+30361560 ID:1 [INFO: 6LoWPAN   ] input: received IPv6 packet with len 856
+30361560 ID:1 [INFO: MLKEM-SERVER] RX PK VALID case=MLKEM512 case_idx=0 seq=0 datalen=800 approx_one_way_ticks=360 approx_one_way_ms=360 from fd00::202:2:2:2
+30361560 ID:1 [INFO: MLKEM-SERVER] TX CT case=MLKEM512 case_idx=0 seq=0 declared=768 datalen=768 ct_attempt=1 to fd00::202:2:2:2
+30361560 ID:1 [INFO: 6LoWPAN   ] output: sending IPv6 packet with len 824
+30361560 ID:1 [INFO: 6LoWPAN   ] output: header len 56 -> 18, total len 824 -> 786, MAC max payload 104, frag_needed 1
+30361560 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: start tag 0 compressed size 786, fragments 9, fragment size 96, ACK_FIRST=0
+30361560 ID:1 [INFO: 6LoWPAN   ] RFRAG RX: datagram complete tag 0 raw bitmap 0xff800000, sending 0xffffffff
+30361560 ID:1 [INFO: 6LoWPAN   ] RFRAG RX: send ACK tag 0 bitmap 0xffffffff
+30361560 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: seq 8 MAC status 0, transmissions 1, waiting RFRAG-ACK
+30362560 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: seq 0/8 tag 0 size 96 offset 0 X=0
+30378960 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: received ACK tag 0 bitmap 0xffffffff
+30378960 ID:2 [INFO: 6LoWPAN   ] RFRAG TX: tag 0 complete (FULL bitmap), ack bitmap 0xffffffff
+30378960 ID:1 [INFO: 6LoWPAN   ] RFRAG ACK MAC done bitmap=0xffffffff status=0 transmissions=1 full=1
+30408032 ID:2 [INFO: 6LoWPAN   ] RFRAG RX: tag 0 seq 0/8 size 96 offset 0 X=0 bitmap 0x80000000 bytes 96/786
+30408032 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: seq 0 MAC status 0, transmissions 1
+30409032 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: seq 1/8 tag 0 size 96 offset 96 X=0
+30446032 ID:2 [INFO: 6LoWPAN   ] RFRAG RX: tag 0 seq 1/8 size 96 offset 96 X=0 bitmap 0xc0000000 bytes 192/786
+30446032 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: seq 1 MAC status 0, transmissions 1
+30447032 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: seq 2/8 tag 0 size 96 offset 192 X=0
+30481032 ID:2 [INFO: 6LoWPAN   ] RFRAG RX: tag 0 seq 2/8 size 96 offset 192 X=0 bitmap 0xe0000000 bytes 288/786
+30481032 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: seq 2 MAC status 0, transmissions 1
+30482032 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: seq 3/8 tag 0 size 96 offset 288 X=0
+30516032 ID:2 [INFO: 6LoWPAN   ] RFRAG RX: tag 0 seq 3/8 size 96 offset 288 X=0 bitmap 0xf0000000 bytes 384/786
+30516032 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: seq 3 MAC status 0, transmissions 1
+30517032 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: seq 4/8 tag 0 size 96 offset 384 X=0
+30545032 ID:2 [INFO: 6LoWPAN   ] RFRAG RX: tag 0 seq 4/8 size 96 offset 384 X=0 bitmap 0xf8000000 bytes 480/786
+30545032 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: seq 4 MAC status 0, transmissions 1
+30546032 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: seq 5/8 tag 0 size 96 offset 480 X=0
+30562032 ID:2 [INFO: 6LoWPAN   ] RFRAG RX: tag 0 seq 5/8 size 96 offset 480 X=0 bitmap 0xfc000000 bytes 576/786
+30562032 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: seq 5 MAC status 0, transmissions 1
+30563032 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: seq 6/8 tag 0 size 96 offset 576 X=0
+30598032 ID:2 [INFO: 6LoWPAN   ] RFRAG RX: tag 0 seq 6/8 size 96 offset 576 X=0 bitmap 0xfe000000 bytes 672/786
+30598032 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: seq 6 MAC status 0, transmissions 1
+30599032 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: seq 7/8 tag 0 size 96 offset 672 X=0
+30632032 ID:2 [INFO: 6LoWPAN   ] RFRAG RX: tag 0 seq 7/8 size 96 offset 672 X=0 bitmap 0xff000000 bytes 768/786
+30632032 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: seq 7 MAC status 0, transmissions 1
+30633032 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: seq 8/8 tag 0 size 18 offset 768 X=1
+30667536 ID:2 [INFO: 6LoWPAN   ] RFRAG RX: tag 0 seq 8/8 size 18 offset 768 X=1 bitmap 0xff800000 bytes 786/786
+30667536 ID:2 [INFO: 6LoWPAN   ] input: received IPv6 packet with len 824
+30667536 ID:2 [INFO: MLKEM-CLIENT] RX CT VALID case=MLKEM512 case_idx=0 seq=0 declared=768 datalen=768 rtt_ticks=666 rtt_ms=666 from fd00::201:1:1:1
+30667536 ID:2 [INFO: 6LoWPAN   ] RFRAG RX: datagram complete tag 0 raw bitmap 0xff800000, sending 0xffffffff
+30667536 ID:2 [INFO: 6LoWPAN   ] RFRAG RX: send ACK tag 0 bitmap 0xffffffff
+30667536 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: seq 8 MAC status 0, transmissions 1, waiting RFRAG-ACK
+30668536 ID:2 [INFO: MLKEM-CLIENT] EXCHANGE SUCCESS case=MLKEM512 case_idx=0 seq=0 pk_size=800 ct_size=768 attempts=1
+30707960 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: received ACK tag 0 bitmap 0xffffffff
+30707960 ID:1 [INFO: 6LoWPAN   ] RFRAG TX: tag 0 complete (FULL bitmap), ack bitmap 0xffffffff
+30707960 ID:1 [INFO: MLKEM-SERVER] RESULT_SERVER,role=server,variant=2,variant_name=B2_RFRAG_FINAL_ACK,kem=512,kem_name=MLKEM512,seed=200002,forced_loss=none,forced_loss_layer=none,success=1,server_success=1,end_reason=rfrag_full_ack_received,pk_valid_rx=1,pk_duplicate_rx=0,pk_invalid_rx=0,ct_tx=1,last_seq=0,last_one_way_ticks=360,last_one_way_ms=360
+30707960 ID:1 [INFO: MLKEM-SERVER] RESULT_NET_SERVER,role=server,variant=2,kem=512,seed=200002,datagram_tx=1,datagram_rx_complete=1,data_frag_tx=9,data_frag_rx=9,data_bytes_tx=840,data_bytes_rx=872,rfrag_retx_tx=0,selective_fragment_retransmissions=0,rfrag_ack_tx=1,rfrag_ack_rx=1,rfrag_ack_tx_done=1,rfrag_ack_tx_ok=1,rfrag_full_ack_tx_done=1,rfrag_full_ack_tx_ok=1,rfrag_full_ack_rx=1,rfc4944_final_tx_done=0,rfc4944_final_tx_ok=0,idle_ack_tx=0,rto_expired=0,null_ack_rx=0,partial_ack_rx=0,ctx_create=1,ctx_complete=1,ctx_timeout_incomplete=0,ctx_timeout_complete=0,ctx_alloc_fail=0,ctx_active_now=1,ctx_active_peak=1,ctx_ticks_closed=0
+30707960 ID:1 [INFO: MLKEM-SERVER] EXPERIMENT COMPLETE: role=server variant=2 kem=512 success=1
+30707960 ID:1 [INFO: MLKEM-SERVER] EXPERIMENT_DONE_SERVER,success=1,reason=rfrag_full_ack_received
+PIPELINE_EVENT,SERVER_DONE_OBSERVED=1
+30707960 ID:2 [INFO: 6LoWPAN   ] RFRAG ACK MAC done bitmap=0xffffffff status=0 transmissions=1 full=1
+30708960 ID:2 [INFO: MLKEM-CLIENT] RESULT,role=client,variant=2,variant_name=B2_RFRAG_FINAL_ACK,kem=512,kem_name=MLKEM512,seed=200002,forced_loss=none,forced_loss_layer=none,success=1,client_success=1,run_success=1,seq=0,pk_size=800,ct_size=768,pk_frags_expected=9,ct_frags_expected=9,app_attempts=1,app_retries=0,application_retries=0,app_timeouts=0,rtt_valid=1,rtt_ticks=666,rtt_ms=666,latency_ms=666,elapsed_ticks=667,elapsed_ms=667
+30708960 ID:2 [INFO: MLKEM-CLIENT] RESULT_NET,role=client,variant=2,kem=512,seed=200002,datagram_tx=1,datagram_rx_complete=1,data_frag_tx=9,data_frag_rx=9,data_bytes_tx=872,data_bytes_rx=840,rfrag_retx_tx=0,selective_fragment_retransmissions=0,rfrag_ack_tx=1,rfrag_ack_rx=1,rfrag_ack_tx_ok=1,rfrag_full_ack_tx_done=1,rfrag_full_ack_tx_ok=1,idle_ack_tx=0,rto_expired=0,null_ack_rx=0,partial_ack_rx=0,full_ack_rx=1,ctx_create=1,ctx_complete=1,ctx_timeout_incomplete=0,ctx_timeout_complete=0,ctx_alloc_fail=0,ctx_active_now=1,ctx_active_peak=1,ctx_ticks_closed=0
+30708960 ID:2 [INFO: MLKEM-CLIENT] EXPERIMENT COMPLETE: variant=2 kem=512 success=1
+30708960 ID:2 [INFO: MLKEM-CLIENT] EXPERIMENT_DONE_CLIENT,success=1,reason=rfrag_full_ack_mac_ok
+PIPELINE_EVENT,CLIENT_SUCCESS_AUTHORITY=1
+TEST OK
+Test ended at simulation time: 30708960

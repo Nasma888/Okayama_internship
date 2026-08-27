@@ -1,0 +1,54 @@
+MAKE_WITH_DTLS ?= 0
+
+ifeq ($(MAKE_WITH_DTLS),1)
+
+ # Use Mbed TLS library as default
+  MBEDTLS_PATH := os/net/security/mbedtls
+
+  CFLAGS += -DMBEDTLS_CONFIG_FILE=\"os/net/app-layer/coap/mbedtls-support/mbedtls-config.h\"
+
+  ifeq ($(wildcard $(CONTIKI)/$(MBEDTLS_PATH)/Makefile),)
+   ${error Could not find the MbedTLS submodule. Please run "git submodule update --init" and try again}
+  endif
+
+  MODULES += os/net/app-layer/coap/mbedtls-support
+  MODULES += $(MBEDTLS_PATH) $(addprefix $(MBEDTLS_PATH)/,library include)
+
+  MODULES += $(addprefix $(MBEDTLS_PATH)/tf-psa-crypto/,core include)
+  MODULES += $(addprefix $(MBEDTLS_PATH)/tf-psa-crypto/drivers/builtin/,src include)
+
+  ifeq ($(MAKE_COAP_DTLS_WITH_CERT), 1)
+   CFLAGS += -DCOAP_DTLS_CONF_WITH_CERT=1
+  endif
+
+  ifeq ($(MAKE_COAP_DTLS_WITH_PSK), 1)
+   CFLAGS += -DCOAP_DTLS_CONF_WITH_PSK=1
+  endif
+
+  ifeq ($(MAKE_COAP_DTLS_WITH_SERVER), 1)
+   CFLAGS += -DCOAP_DTLS_CONF_WITH_SERVER=1
+  endif
+
+  ifeq ($(MAKE_COAP_DTLS_WITH_CLIENT), 1)
+   CFLAGS += -DCOAP_DTLS_CONF_WITH_CLIENT=1
+  endif
+
+
+ CFLAGS += -DWITH_DTLS=1
+
+ MAKE_COAP_DTLS_KEYSTORE_NONE   := 0
+ MAKE_COAP_DTLS_KEYSTORE_SIMPLE := 1
+ MAKE_COAP_DTLS_KEYSTORE_LWM2M  := 2
+
+ MAKE_COAP_DTLS_KEYSTORE ?= MAKE_COAP_DTLS_KEYSTORE_LWM2M
+
+ ifeq ($(MAKE_COAP_DTLS_KEYSTORE),MAKE_COAP_DTLS_KEYSTORE_SIMPLE)
+  CFLAGS += -DCOAP_DTLS_KEYSTORE_CONF_WITH_SIMPLE=1
+ else ifeq ($(MAKE_COAP_DTLS_KEYSTORE),MAKE_COAP_DTLS_KEYSTORE_LWM2M)
+  CFLAGS += -DCOAP_DTLS_KEYSTORE_CONF_WITH_LWM2M=1
+ else ifeq ($(MAKE_COAP_DTLS_KEYSTORE),MAKE_COAP_DTLS_KEYSTORE_NONE)
+  # No C flag needed for no keystore
+ else
+  ${error Unsupported CoAP DTLS keystore: $(MAKE_COAP_DTLS_KEYSTORE)}
+ endif
+endif

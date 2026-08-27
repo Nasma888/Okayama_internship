@@ -1,0 +1,68 @@
+PATCH -- UDGMGilbertLoss.java (v2, révisé)
+============================================
+CONTEXTE : LOG_BURSTS seul donne N(B) et N(B->G) [B->G = nb de rafales],
+suffisant pour P_BG_hat = N(B->G)/N(B). Mais il manque N(G) pour calculer
+P_GB_hat = N(G->B)/N(G) -- LOG_BURSTS ne dit rien de la durée des
+périodes "GOOD" entre les rafales.
+
+Plutôt qu'un log par-tentative (verbeux, ~15000+ lignes/run), on ajoute
+un simple compteur cumulé de tentatives par lien, rattaché au log de fin
+de rafale déjà existant (donc AUCUNE ligne supplémentaire -- juste un
+champ de plus sur une ligne qui existe déjà).
+
+--- 1) Nouveau champ, à côté de linkState/burstLenCounter ---
+
+  private final Map<String, Long> totalAttempts = new HashMap<>();
+
+--- 2) Dans getRxSuccessProbability(), juste après le calcul de `key`
+       et AVANT le "if (LOG_BURSTS)" -- incrément inconditionnel, coût
+       négligeable, permet de garder le compteur exact même si LOG_BURSTS
+       est activé après coup sur un run déjà en cours ---
+
+    totalAttempts.merge(key, 1L, Long::sum);
+
+--- 3) Modifier trackBurst() pour recevoir et logger le compteur cumulé
+       au moment où une rafale se termine (transition BAD -> GOOD) :
+
+  private void trackBurst(String key, ChanState current, ChanState next) {
+    if (current == ChanState.GOOD && next == ChanState.BAD) {
+      burstLenCounter.put(key, 1);
+    } else if (current == ChanState.BAD && next == ChanState.BAD) {
+      burstLenCounter.merge(key, 1, Integer::sum);
+    } else if (current == ChanState.BAD && next == ChanState.GOOD) {
+      int len = burstLenCounter.getOrDefault(key, 1);
+      long cumulative = totalAttempts.getOrDefault(key, 0L);
+      logger.info("[Gilbert] burst ended on {}: length={} fragments cumulative_attempts={}",
+          key, len, cumulative);
+      burstLenCounter.remove(key);
+    }
+  }
+
+--- 4) LOG_ATTEMPTS (patch v1) devient OPTIONNEL -- ne l'ajoute que si tu
+       veux en plus reconstruire la séquence complète succès/échec pour
+       un test de cohérence fin (comme fait dans parse_logs.py), pas
+       nécessaire pour estimer P_GB/P_BG/PRR par comptage de transitions.
+
+============================================
+Format de sortie résultant (une ligne PAR RAFALE, pas par tentative) :
+
+  [Gilbert] burst ended on 2->3: length=4 fragments cumulative_attempts=1583
+
+`cumulative_attempts` = nombre total de tentatives observées sur ce lien
+depuis le début de la simulation, jusqu'à ET Y COMPRIS la dernière
+tentative de cette rafale. Ça donne, pour une fenêtre entre deux rafales
+consécutives (après exclusion du burn-in) :
+
+  N_total_fenêtre = cumulative_attempts(rafale_fin) - cumulative_attempts(rafale_burn_in)
+  N(B)            = somme des longueurs de rafales dans la fenêtre
+  N(G)            = N_total_fenêtre - N(B)
+  N(G->B) = N(B->G) = nombre de rafales dans la fenêtre
+  P_BG_hat = N(B->G) / N(B)
+  P_GB_hat = N(G->B) / N(G)
+  PRR_hat  = N(G) / N_total_fenêtre
+
+LIMITE CONNUE : les tentatives situées APRÈS la fin de la dernière rafale
+loggée (si le run se termine en état GOOD) ne sont pas comptées dans
+N_total_fenêtre -- biais de censure mineur, cohérent avec le traitement
+déjà prévu pour la dernière rafale censurée à droite (cf. protocole §4).
+
